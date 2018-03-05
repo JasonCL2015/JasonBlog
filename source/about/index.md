@@ -1,26 +1,9 @@
-﻿title: 关于我们
-keywords: 
-date: 2016-10-14 11:25:06
-categories:
-tags:
-description:
----团队介绍
-<blockquote class="blockquote-center"></blockquote>
-<img src="/image-url" class="full-image" />
+﻿
+## 关于我
+### 自我介绍：
+    从2010年至今，不忘初心一直坚持着我热爱的程序员工作。主要涉猎方向：Java后端开发，应用服务治理，架构设计，自动化运维，企业技术顾问等。
 
 
-<!--more-->
 
-### 未读书单
-
-#### 《Spring Boot实战》
-#### 《JavaEE开发的颠覆者 Spring Boot实战  完整版》
-#### 《Spring技术内幕：深入解析Spring架构与设计原理(第2版)》
-#### 《Gradle User Guide》
-#### 《JHipster》
-
-### 已读书单
-
-    坚持每天读书，写下读书笔记。
-> 参考阅读
-- []()
+联系方式：
+邮箱：531318803@qq.com

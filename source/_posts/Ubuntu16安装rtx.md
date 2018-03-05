@@ -1,4 +1,4 @@
-title: Ubuntu16安装rtx
+﻿title: Ubuntu16安装rtx
 keywords: 'Ubuntu,rtx'
 date: 2016-09-18 21:03:04
 categories: 
@@ -26,38 +26,40 @@ description:
 
 因为rtx没有Linux版本，所以我们需要在Ubuntu中安装wine来解决打开exe文件的问题。
 利用[PPA源][2]进行快速安装wine
-
+  ```vim
     sudo add-apt-repository ppa:wine/wine-builds
     sudo apt-get update
-
+  ```
 推荐安装winehq官方提供的[最新版本wine][3]
-
+  ```vim
     sudo apt-get install wine-devel
+  ```
 安装wine下的window扩展包安装工具winetricks,在终端输入
-
+  ```vim
     sudo wget http://winetricks.org/winetricks
     chmod +x winetricks
     sudo mv winetricks /usr/local/bin
+  ```
 安装rtx用到的相关扩展，在终端输入
-
+  ```vim
     winetricks msxml3 gdiplus riched20 riched30 ie6 vcrun6 vcrun2005sp1
-
+  ```
 注意：如果相关扩展无法下载，可以去找其它下载源，手动解压到~/.cache/winetricks下。
 
 ##安装RTX
 上述环境都准备好后，在终端输入
-
+  ```vim
     wine rtxclient2015formal.exe
-
+  ```
 ##中文方框乱码问题解决
 终端输入
     winetricks corefonts
 下载字体[字体1][4][字体2][5]
 解压上面的两个文件后，拷贝文泉驿字体，并导入注册表文件
-
+  ```vim
     cp wqy-microhei/wqy-microhei.ttc ~/.wine/drive_c/windows/Fonts/.
     regedit font.reg
-
+  ```
 全部完成！
 > 参考阅读
 - [字体问题解决](http://rubyisteleanor.blog.51cto.com/8723438/1578982)
